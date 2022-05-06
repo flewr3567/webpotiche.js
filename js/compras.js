@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	const miLocalStorage = window.localStorage;
 
 	// Funciones 
-	// @ts-ignore
 	async function baseDeDatos () {
 		const res = await Fetch('../js/compras.json')
 		console.log(res) 

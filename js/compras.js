@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Variables
 	var carrito = [];
-	let baseDeDatos = [];
+	var baseDeDatos = [];
 	const divisa = '$';
 	const DOMitems = document.querySelector('#items');
 	const DOMcarrito = document.querySelector('#carrito');

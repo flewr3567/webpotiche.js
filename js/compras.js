@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Fetch/ 
 	async function carrito () {
-		const res = await Fetch('../js/compras.json')
+		const res = await Fetch ('../js/compras.json')
 		console.log(res) 
 		const photos = await res.JSON
 		console.log(photos) 

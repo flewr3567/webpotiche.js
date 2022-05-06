@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	// Variables
-	let carrito = [];
+	var carrito = [];
 	let baseDeDatos = [];
 	const divisa = '$';
 	const DOMitems = document.querySelector('#items');
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const miLocalStorage = window.localStorage;
 
 	// Fetch/ 
-	async function baseDeDatos() {
+	async function carrito () {
 		const res = await Fetch('../js/compras.json')
 		console.log(res) 
 		const photos = await res.JSON

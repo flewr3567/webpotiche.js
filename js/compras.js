@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	// Variables
-	var carrito = [];
-	var baseDeDatos = [];
+	var carrito = []
 	const divisa = '$';
 	const DOMitems = document.querySelector('#items');
 	const DOMcarrito = document.querySelector('#carrito');
@@ -11,13 +10,46 @@ document.addEventListener('DOMContentLoaded', () => {
 	const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 	const miLocalStorage = window.localStorage;
 
-	// Fetch/ 
-	async function carrito () {
-		const res = await Fetch ('../js/compras.json')
-		console.log(res) 
-		const photos = await res.JSON
-		console.log(photos) 
-	}
+	// Funciones 
+	const baseDeDatos = [
+		{
+			id: 1,
+			nombre: 'Arañas',
+			precio: 10000,
+			imagen: '/images/img15.jpg'
+		},
+		{
+			id: 2,
+			nombre: 'Velas',
+			precio: 1000,
+			imagen: '/images/img13.jpg'
+		},
+		{
+			id: 3,
+			nombre: 'Centros de Mesa',
+			precio: 5000,
+			imagen: '/images/img17.jpg'
+		},
+		{
+			id: 4,
+			nombre: 'Exterior',
+			precio: 70000,
+			imagen: '/images/img12.jpg'
+		},
+		{
+			id: 5,
+			nombre: 'Cuadros',
+			precio: 4000,
+			imagen: '/images/img4.jpg'
+		},
+		{
+			id: 6,
+			nombre: 'muebles',
+			precio: 150000,
+			imagen: '/images/img7.jpg'
+		}
+
+	];
 
 	/**. No confundir con el carrito
 	*/
